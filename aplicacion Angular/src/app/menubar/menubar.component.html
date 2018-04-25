@@ -1,0 +1,32 @@
+
+<nav>
+	<div class="nav-wrapper green darken-2">
+		<a  class="left brand-logo"> Catalogo </a>
+
+		<ul id="nav-mobile" class="right ">
+			<li> 
+				<a [routerLink]="['/catalogo']" > 
+					<i class="material-icons medium">apps</i> 
+				</a> 
+			</li>
+			<li> 
+				<a [routerLink]="['/carrito']" > 
+					<i class="material-icons medium ">local_grocery_store</i>
+					<span class="items" *ngIf="!httpservice.cantidad == 0" > {{ httpservice.cantidad }} </span>
+				</a> 
+			</li>
+			<!-- li> 
+				<a href="#"> 
+					<i class="material-icons medium">archive</i> 
+				</a> 
+			</li -->
+			<li> 
+				<a (click)="logout()" > 
+					<i class="material-icons medium">exit_to_app</i> 
+				</a> 
+			</li>
+		</ul>
+
+	</div>
+</nav>
+

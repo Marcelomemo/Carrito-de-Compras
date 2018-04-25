@@ -1,0 +1,50 @@
+<div class="contenedor-principal">
+	<menubar> </menubar>
+
+<div class="container">
+	<div class="row">
+
+		<div class="col s12 titulo">
+			<div class="card Small">
+				<div class="card-content">
+					<h5 class="col s12 m6 l4 ">Catálogo de Productos</h5>
+					<form class="col s12 m6 l4 right">
+						<div class="input-field">
+							<input #search id="search" type="search" required>
+							<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+							<i class="material-icons">close</i>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="col s12 m6 l3 " *ngFor="let item of productos | filtroPoducto: search.value" >
+			<div class="card Small">
+				<div class="card-image">
+					<img class="activator" [src]="'assets/images/' + item.img">
+			    </div>
+			    <div class="card-content">
+	    			<span class="card-title activator grey-text text-darken-4"> {{ item.titulo }} </span>
+					<p class="light"> Precio :  {{ item.precio | currency:'USD':true:'1.2-2' }} </p>
+					<p class="light"> Unidades disponibles. {{ item.cantidad }} </p>
+				</div>
+
+				<div class="card-action">
+					<div class="col s4 m6">
+						<a (click)="detalleProducto(item.titulo)" detalleProducto class="waves-effect waves-light btn light-blue darken-4"> Ver Más </a>
+					</div>
+					<div class="col s4 m3">
+						<button class="waves-effect waves-light btn amber accent-4 right" (click)="producto_carrito(item.titulo, numero.value)"> Añadir </button>
+					</div>
+					<div class="col s4 m3">
+						<input type="number" class="validate" value="1" #numero min='1' max='{{ item.cantidad }}'>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+</div>

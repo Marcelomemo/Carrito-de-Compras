@@ -1,0 +1,31 @@
+.contenedor-principal {
+	background: url('assets/images/main-fondo.jpg') no-repeat center top;
+	background-size: cover;
+	background-attachment: fixed !important;
+
+}
+
+.container {
+    padding-top: 5rem;
+    padding-bottom: .5rem;
+}
+
+.row .col {
+    background: #fff;
+}
+
+.container .row {
+    border-bottom: 1px solid;
+}
+
+.titulo {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+}

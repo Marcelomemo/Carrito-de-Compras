@@ -1,0 +1,26 @@
+body {
+	background: url('assets/images/main-fondo.jpg') no-repeat center top;
+	background-size: cover;
+	background-attachment: fixed !important;
+
+}
+
+.col.s12.m6{
+    float: none;
+    margin: 20vh auto;
+    width: 300px;
+    height: 300px;
+}
+
+.card .card-content .card-title {
+    text-align: center;
+}
+
+form .row {
+	margin-bottom: 0;
+}
+
+input.ng-touched.ng-invalid{
+	border: 1px solid red;
+}
+

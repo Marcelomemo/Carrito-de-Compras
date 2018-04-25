@@ -1,0 +1,46 @@
+.contenedor-principal {
+	background: url('assets/images/main-fondo.jpg') no-repeat center top;
+	background-size: cover;
+	background-attachment: fixed !important;
+}
+
+.container {
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+}
+
+#introduction {
+    background-color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card .card-image img {
+	height: 17rem;
+	padding: .5rem;
+}
+
+.card .card-content {
+    padding: 0 24px;
+}
+
+.btn, .btn-large, .btn-flat {
+    padding: 0 .5rem;
+}
+
+.card .card-action:last-child {
+    padding-bottom: 3.5rem;
+}
+
+.titulo div div {
+	height: 5rem;
+}
+
+.titulo div div h5 {
+    margin-top: 1.6rem;
+}
+
+.input-field input[type="search"] {
+    padding-left: 45px;
+}

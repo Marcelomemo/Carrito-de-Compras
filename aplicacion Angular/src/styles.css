@@ -1,0 +1,7 @@
+
+
+html{
+	background: url('assets/images/login-fondo.jpg') no-repeat center top;
+	background-size: cover;
+	background-attachment: fixed !important;	
+}
